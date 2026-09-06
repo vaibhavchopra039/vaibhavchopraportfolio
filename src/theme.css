@@ -1,0 +1,49 @@
+:root {
+  --bg: #151815;
+  --surface: #1d221e;
+  --surface-strong: #252b26;
+  --ink: #f1f0e8;
+  --muted: #a6aaa0;
+  --line: #3c453d;
+  --accent: #ff765a;
+  --dark: #101310;
+  --accent-ink: #171a17;
+}
+
+:root[data-theme='light'] {
+  --bg: #f4f1ea;
+  --surface: #e9e6dd;
+  --surface-strong: #dfdbd1;
+  --ink: #252522;
+  --muted: #77766f;
+  --line: #d7d3c9;
+  --accent: #ee5b3f;
+  --dark: #242522;
+  --accent-ink: #f4f1ea;
+}
+
+body { background: var(--bg); color: var(--ink); }
+
+.button-dark { color: var(--accent-ink); background: var(--accent); }
+.button-light { color: var(--ink); background: var(--surface-strong); }
+
+.work-section { background: var(--surface); }
+.project-card { background: var(--bg); }
+
+.lab-section { background: var(--dark); color: var(--ink); }
+.lab-section .section-kicker,
+.lab-section .section-note { color: var(--muted); }
+.lab-grid { background: var(--line); border-color: var(--line); }
+.lab-card { background: var(--dark); }
+.lab-card:hover { background: var(--accent); color: var(--accent-ink); }
+.lab-card:hover i { color: var(--accent-ink); }
+
+.stack-group span { background: var(--surface-strong); }
+
+.contact-section { color: var(--accent-ink); }
+.contact-section .section-kicker { color: var(--accent-ink); opacity: .62; }
+.contact-section h2 em { color: var(--ink); }
+.contact-section p a { border-bottom: 1px solid currentColor; }
+
+.modal-backdrop { background: rgb(10 12 10 / 78%); }
+.modal { background: var(--bg); }
